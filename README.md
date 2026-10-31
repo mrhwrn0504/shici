@@ -80,3 +80,5 @@ OCR、重点词筛选和翻译都可能出错；支持校对不代表能百分�
 文档结构参考 [GitHub README 指南](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)、[ReadYou](https://github.com/ReadYouApp/ReadYou) 与 [AnkiDroid](https://github.com/ankidroid/Anki-Android) 的入口组织方式；未复制其界面或宣传素材。
 
 仓库名为 **十磁**（GitHub 地址使用 `shici`），应用名仍为“拾词”。暖色在设置中单独选择，使用米杏与柔棕；默认保持深色。首次扫描页提供拍照、相册和粘贴三个入口。
+
+0.12.0：支持主页面左右滑动；学习页精简为阅读、听读、书写；选段译文用弹窗显示。安装统计在设置的数据分组内，默认不登记，仅统计自愿参与的安装，不等于精确人数。
