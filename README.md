@@ -1,13 +1,13 @@
 <div align="center">
 <img src="icon.webp" width="88" alt="拾词图标" />
 
-# 拾词
+# 十磁 · 拾词
 
 **从课文里拾起生词，让阅读继续。**
 
-拍照识词 · 课文词库 · 中英翻译 · 本地学习资料
+拍照识词 · 课文词库 · 多语种翻译 · 本地学习资料
 
-[下载 Android 安装包](https://github.com/mrhwrn0504/shici-updates/releases/latest) · [快速开始](QUICKSTART.md) · [功能详解](FEATURES.md) · [常见问题](FAQ.md) · [问题反馈](https://github.com/mrhwrn0504/shici-updates/issues/new)
+[下载 Android 安装包](https://github.com/mrhwrn0504/shici/releases/latest) · [快速开始](QUICKSTART.md) · [功能详解](FEATURES.md) · [常见问题](FAQ.md) · [问题反馈](https://github.com/mrhwrn0504/shici/issues/new)
 
 </div>
 
@@ -29,14 +29,14 @@
 | 词太多，滚动难找 | 默认四列紧凑词卡，英文＋一个中文意思；支持中英文搜索、筛选和排序 |
 | 只想先知道这个词的意思 | 点词打开底部详情，查看音标、词性、释义和课文原句；更多内容按需展开 |
 | 扫错、漏词或选错重点 | 原图点词框查词；双指缩放、单指拖动；框选自动补词，或手动输入、更正、移出 |
-| 想读懂一句或整篇 | 从课文导入翻译，支持选段和全文；在线中英互译、离线英译中 |
+| 想读懂一句或整篇 | 从课文导入翻译，支持选段和全文；在线多语种互译、离线英译中 |
 | 想以后继续读、继续记 | 词库先展示课文，保留来源关系；收藏、个人补充和复习设置可继续使用 |
-| 希望界面安静一点 | 三项底部导航，设置分组折叠，暖色暗底默认；支持自选壁纸、透明度与跟随图片配色 |
+| 希望界面安静一点 | 三项底部导航，设置分组折叠，默认深色暗底与低饱和灰绿强调色；支持自选壁纸、透明度与跟随图片配色 |
 
 ## 下载与安装
 
 - Android 8.0（API 26）及以上；当前提供 **arm64-v8a** 安装包。
-- 从 [Releases](https://github.com/mrhwrn0504/shici-updates/releases/latest) 下载 `shici-…-arm64.apk`，按系统提示安装。
+- 从 [Releases](https://github.com/mrhwrn0504/shici/releases/latest) 下载 `shici-…-arm64.apk`，按系统提示安装。
 - 更新时覆盖安装，保留学习资料；不要为了升级先卸载。
 - 安装过 0.10.0 及以上版本后，启动会定期检查新版；设置也可手动检查。更高版本才提示，可稍后或跳过。
 - `SHA256.txt` 用于核对安装包完整性；对应源码在同一个 Release。
@@ -58,7 +58,7 @@
 | 拍照 OCR、基础词典、记录浏览 | 不需要下载 OCR 模型，随 APK 提供 | 支持 |
 | 离线英译中 | 需下载 Google 中文翻译模型，英语模型已内置 | 模型就绪后支持 |
 | 英语离线朗读 | 取决于手机 TTS 是否已有英语语音 | 有离线音色时支持 |
-| 在线中英互译、联网词典补全、在线发音 | 需要网络，受服务可达性和额度限制 | 不支持 |
+| 在线多语种互译、联网词典补全、在线发音 | 需要网络，受服务可达性和额度限制 | 不支持 |
 | 检查软件更新 | 需访问 GitHub 发布源 | 不支持 |
 
 **翻译模型与朗读语音不是同一个东西。** 模型下载失败请先看 [下载排查](FAQ.md#离线翻译模型下载失败怎么办)，不要反复盲点重试。0.10.1 修复发行包翻译组件构造方法被压缩删除的问题，并提供“错误详情 → 复制信息”。手机网络无法访问模型服务器时，下载仍可能失败。
@@ -69,7 +69,7 @@
 
 ## 反馈与项目边界
 
-请在 [Issues](https://github.com/mrhwrn0504/shici-updates/issues/new) 描述版本、手机系统、操作步骤、预期和实际现象。离线翻译失败可附上应用内复制的错误详情。请删除私人课文内容与个人图片后再公开提交。
+请在 [Issues](https://github.com/mrhwrn0504/shici/issues/new) 描述版本、手机系统、操作步骤、预期和实际现象。离线翻译失败可附上应用内复制的错误详情。请删除私人课文内容与个人图片后再公开提交。
 
 OCR、重点词筛选和翻译都可能出错；支持校对不代表能百分之百自动判断重点。当前没有云端账号同步、口语自动评分或 AI 自动批改；跟读录音已移除。发行编译、签名与资产检查不等于已通过所有手机的体验测试，实机问题持续由用户反馈。
 
@@ -78,3 +78,5 @@ OCR、重点词筛选和翻译都可能出错；支持校对不代表能百分�
 原项目：[zkwi/vocab-capture-android](https://github.com/zkwi/vocab-capture-android)，[MIT License](LICENSE)。识别使用 PaddleOCR Android SDK / ONNX Runtime / OpenCV；离线翻译使用 Google ML Kit；词典包含 ECDICT、NYIST-OS/WordList 等资料，对应来源与许可保留在源码和应用资源中。在线服务说明见 [PRIVACY.md](PRIVACY.md)。新图标由图像生成工具辅助设计，应用内保留 TRP 标识。
 
 文档结构参考 [GitHub README 指南](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)、[ReadYou](https://github.com/ReadYouApp/ReadYou) 与 [AnkiDroid](https://github.com/ankidroid/Anki-Android) 的入口组织方式；未复制其界面或宣传素材。
+
+仓库名为 **十磁**（GitHub 地址使用 `shici`），应用名仍为“拾词”。暖色在设置中单独选择，使用米杏与柔棕；默认保持深色。首次扫描页提供拍照、相册和粘贴三个入口。

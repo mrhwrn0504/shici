@@ -22,7 +22,7 @@ ML Kit通过manifest元数据反射创建Firebase组件注册器。旧firebase-c
 
 正式Release中同时上传APK、update.json、SHA256.txt与源码包。版本号可变，但versionCode必须递增。当前应用检查：
 
-https://github.com/mrhwrn0504/shici-updates/releases/latest/download/update.json
+https://github.com/mrhwrn0504/shici/releases/latest/download/update.json
 
 JSON字段：versionCode、versionName、packageName、minSdk、downloadUrl、sha256、notes。downloadUrl指向本仓库Release的对应APK，SHA-256与实际文件一致。应用不静默安装，点击下载交给浏览器与Android安装器。
 
